@@ -10,6 +10,6 @@ export const generateCode = () => {
 
 export const generateToken = (payload) => {
   return jwt.sign(payload, process.env.JWT_SECRET || "secret_secret_secret", {
-    expiresIn: "1h",
+    expiresIn: "24h",
   });
 };
